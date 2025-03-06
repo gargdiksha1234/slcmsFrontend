@@ -1,0 +1,162 @@
+.container {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #00205B;
+    padding: 15px 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.formContainer {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-weight: 500;
+    color: #333;
+}
+
+.selectWrapper {
+    position: relative;
+}
+
+.select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    appearance: none;
+    background: white;
+}
+
+.datePickerWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dateInput {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 150px;
+    background: white;
+    cursor: pointer;
+}
+
+.calendarButton {
+    position: absolute;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.calendarPopup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    margin-top: 4px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.goButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 38px;
+}
+
+.goButton:hover {
+    background-color: #218838;
+}
+
+/* Replace the :global styles with these */
+.calendar {
+    border: none;
+    font-family: inherit;
+}
+
+.calendarTileActive {
+    background: #00205B !important;
+}
+
+.calendarTileNow {
+    background: #e6e6e6;
+}
+
+/* Add these new styles for better calendar appearance */
+.calendarPopup :global(.react-calendar) {
+    width: 350px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.calendarPopup :global(.react-calendar button) {
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+.calendarPopup :global(.react-calendar__month-view__days__day--weekend) {
+    color: #d10000;
+}
+
+.calendarPopup :global(.react-calendar__tile--active) {
+    background: #00205B;
+    color: white;
+}
+
+.calendarPopup :global(.react-calendar__tile--now) {
+    background: #e6e6e6;
+}
+
+.calendarPopup :global(.react-calendar__tile:enabled:hover) {
+    background-color: #e6e6e6;
+}

@@ -1,0 +1,158 @@
+.container {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .filterGroup label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    appearance: none;
+    background: white;
+  }
+  
+  .tableControls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .entriesControl {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .entriesControl select {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .searchControl {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .searchControl input {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .tableContainer {
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #00205B;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .noData {
+    text-align: center;
+    color: #dc3545;
+  }
+  
+  .activeStatus {
+    color: #28a745;
+  }
+  
+  .inactiveStatus {
+    color: #dc3545;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .paginationButtons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .paginationButtons button {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .paginationButtons button.active {
+    background-color: #607D8B;
+    color: white;
+    border-color: #607D8B;
+  }
+  
+  .paginationButtons button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .header {
+    background-color: #00205B;
+    padding: 15px 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
