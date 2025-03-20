@@ -1,0 +1,114 @@
+.container {
+    padding: 20px;
+  }
+  
+  .tableControls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .entriesControl select {
+    margin: 0 8px;
+    padding: 4px;
+  }
+  
+  .searchControl input {
+    margin-left: 8px;
+    padding: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .tableContainer {
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #00205B;
+    color: white;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .tablePagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .paginationControls button {
+    padding: 6px 12px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .paginationControls button.active {
+    background-color: #607D8B;
+    color: white;
+    border-color: #607D8B;
+  }
+  
+  .paginationControls button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .actionButtons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .addButton {
+    background-color: #28a745;
+  }
+  
+  .modifyButton {
+    background-color: #007bff;
+  }
+  
+  .viewButton {
+    background-color: #17a2b8;
+  }
+  
+  .reportButton {
+    background-color: #6c757d;
+  }
+  
+  .actionButtons button:hover {
+    opacity: 0.9;
+  }
